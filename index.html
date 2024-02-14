@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Genshin Team Randomizer 4.2</title>
+	<title>Genshin Team Randomizer 4.4</title>
 	<link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -44,9 +44,9 @@
 function randomize(){
 	const totalHealers = 3;
 	const totalCharacters = 12;
-	let healerList = ["Baizhu", "Barbara", "Bennett", "Charlotte", "Diona", "Dori", "Furina", "Jean", "Kuki Shinobu", "Mika", "Noelle", "Qiqi", "Sangonomiya Kokomi", "Sayu", "Yaoyao"];
+	let healerList = ["Baizhu", "Barbara", "Bennett", "Charlotte", "Diona", "Dori", "Furina", "Jean", "Kuki Shinobu", "Mika", "Noelle", "Qiqi", "Sangonomiya Kokomi", "Sayu", "Xianyun", "Yaoyao"];
 
-	let nonHealerList= ["Albedo", "Alhaitham", "Aloy", "Amber", "Arataki Itto", "Beidou", "Candace", "Chongyun", "Collei", "Cyno", "Dehya", "Diluc", "Eula", "Faruzan", "Fischl", "Freminet", "Ganyu", "Gorou", "Hu Tao", "Kaedehara Kazuha", "Kaeya", "Kamisato Ayaka", "Kamisato Ayato", "Kaveh", "Keqing", "Kirara", "Klee", "Kujou Sara", "Layla", "Lisa", "Lynette", "Lyney", "Mona", "Nahida", "Neuvillette", "Nilou", "Ningguang", "Raiden Shogun", "Razor", "Rosaria", "Shenhe", "Shikanoin Heizou", "Sucrose", "Tartaglia", "Thoma", "Tighnari", "Traveler", "Venti", "Wanderer", "Wriothesley", "Xiangling", "Xiao", "Xingqiu", "Xinyan", "Yae Miko", "Yanfei", "Yelan", "Yoimiya", "Yun Jin", "Zhongli"];
+	let nonHealerList= ["Albedo", "Alhaitham", "Aloy", "Amber", "Arataki Itto", "Beidou", "Candace", "Chongyun", "Collei", "Cyno", "Dehya", "Diluc", "Eula", "Faruzan", "Fischl", "Freminet", "Gaming", "Ganyu", "Gorou", "Hu Tao", "Kaedehara Kazuha", "Kaeya", "Kamisato Ayaka", "Kamisato Ayato", "Kaveh", "Keqing", "Kirara", "Klee", "Kujou Sara", "Layla", "Lisa", "Lynette", "Lyney", "Mona", "Nahida", "Navia", "Neuvillette", "Nilou", "Ningguang", "Raiden Shogun", "Razor", "Rosaria", "Shenhe", "Shikanoin Heizou", "Sucrose", "Tartaglia", "Thoma", "Tighnari", "Traveler", "Venti", "Wanderer", "Wriothesley", "Xiangling", "Xiao", "Xingqiu", "Xinyan", "Yae Miko", "Yanfei", "Yelan", "Yoimiya", "Yun Jin", "Zhongli"];
 	let outputList = generateList(totalHealers, totalCharacters, healerList, nonHealerList);
 	console.log(outputList);
 	generateOutput(totalCharacters, outputList);
